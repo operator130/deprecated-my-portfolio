@@ -2779,7 +2779,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1.25rem;
   border-radius: 0.75rem;
 }
