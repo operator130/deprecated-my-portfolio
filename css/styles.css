@@ -600,7 +600,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  display: block;
+  max-width:100%;
   height: auto;
 }
 
@@ -11486,6 +11487,11 @@ html {
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
+}
+
+.portfolio-item:hover {
+  opacity: 30%;
+  cursor: pointer;
 }
 
 .portfolio-modal .btn-close {
