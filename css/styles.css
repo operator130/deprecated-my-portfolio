@@ -11366,7 +11366,7 @@ html {
 }
 
 #mainNav {
-  animation: opacity 1.5s both;
+  animation: slide-in 1.5s both;
   animation-delay: 2.5s;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -11374,12 +11374,12 @@ html {
   font-weight: 700;
 }
 
-@keyframes opacity {
+@keyframes slide-in {
   0% {
-    opacity: 0;
+    transform: translateY(-1000px);
   }
   100% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -11497,25 +11497,16 @@ html {
 
 
 .brand-logo {
-  animation: slide-in 0.7s both;
-  animation-delay: 3.5s;
-  width: 45%;
+  width: 33%;
   height: auto;
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateY(-1000px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.brand-text {
+.brand-text{
+  display: inline;
   position: fixed;
   color: #fff;
-  margin-left: 7rem;
+  margin-left: 1rem;
+  margin-top: 0.7rem;
   font-family: "Poppins", sans-serif;
 }
 
