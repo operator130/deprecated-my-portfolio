@@ -11630,3 +11630,18 @@ html {
 .carousel-inner {
   border-style: solid;
 }
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 568px) {
+  .page-section {
+    height: 100vh;
+  }
+    .portrait {
+    width: 70%;
+    justify-content: center;
+    order: 1;
+  }
+}
