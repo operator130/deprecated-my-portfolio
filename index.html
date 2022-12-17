@@ -80,7 +80,7 @@
 
 
         <!-- About Section-->
-        <section class="page-section text-dark mb-0" id="about">
+        <section class="page-section text-dark mb-0 vh-100" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase">About Me</h2>
@@ -94,7 +94,7 @@
                         <p class="lead">Hello world! I'm Bo--an aspiring web designer/developer. My interest in this field started during the early 2000's when I started making custom Myspace themes for friends. Using my creative thought process to find solutions and translate my designs into something tangible never got old. <br><br>
                         When I'm not at my computer, I can be found cooking, at a concert, playing video games, or travelling the world!</p>
                     </div>
-                    <div class="col-lg-4 me-auto portrait">
+                    <div class="col-lg-4 portrait">
                         <img src="assets/img/portrait/IMG_0091.png" alt="">
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form action="https://formsubmit.co/bobartolome@gmail.com" id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -181,6 +181,8 @@
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
+                            <!-- Hidden subject field -->
+                            <input type="hidden" name="_subject" value="Portfolio Email Submission!">
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
