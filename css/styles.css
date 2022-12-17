@@ -592,8 +592,9 @@ progress {
 .img-fluid {
   display: block;
   max-width:100%;
+  min-width: 50%;
   height: auto;
-  border: 5px solid #000;
+  /* border: 5px solid #000; */
 
 }
 
@@ -617,6 +618,7 @@ progress {
   opacity: 0;
   transition: .5s ease;
   background-color: #2c3e50;
+  border-radius: 0.5rem;
 }
 
 .figure {
@@ -649,7 +651,7 @@ progress {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 420px;
   }
 }
 @media (min-width: 768px) {
@@ -4127,7 +4129,8 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 
+) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -11308,7 +11311,7 @@ html {
 
 .page-section {
   padding: 7rem 0;
-  height: 60vh;
+  height: 100vh;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11563,11 +11566,15 @@ html {
   }
 }
 
-.portrait img {
-  width: 90%;
+
+.portrait img{
+  width: 320px;
   height: auto;
   border-style: solid;
+  border-radius: 0.5rem;
+  position: relative;
 }
+
 
 .portfolio .portfolio-item {
   cursor: pointer;
