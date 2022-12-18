@@ -11309,10 +11309,18 @@ html {
 
 /* Custom adjustments */
 
+.masthead{
+  height: 100vh;
+}
+
 .page-section {
   padding: 7rem 0;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -11372,8 +11380,8 @@ html {
 }
 
 #mainNav {
-  animation: slide-in 1.5s both;
-  animation-delay: 2.5s;
+  animation: slide-in 1.3s both;
+  animation-delay: 1.9s;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
