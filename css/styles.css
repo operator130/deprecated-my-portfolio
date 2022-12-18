@@ -11580,12 +11580,17 @@ html {
 }
 
 
-.portrait img{
+/* .portrait img{
   width: 320px;
   height: auto;
   border-style: solid;
   border-radius: 0.5rem;
   position: relative;
+} */
+
+.portrait img {
+  border-style: solid;
+  border-radius: 0.5rem;
 }
 
 
