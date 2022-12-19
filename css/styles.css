@@ -596,8 +596,8 @@ progress {
 
 .img-fluid {
   display: block;
-  max-width:100%;
-  min-width: 50%;
+  max-width: 100%;
+  min-width: 65%;
   height: auto;
   /* border: 5px solid #000; */
 
@@ -4532,6 +4532,8 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: 0.125rem solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
+  padding: 4rem 7rem;
+  margin: 0rem 3rem;
 }
 .card > hr {
   margin-right: 0;
@@ -11386,7 +11388,7 @@ html {
 
 #mainNav {
   animation: slide-in 1.3s both;
-  animation-delay: 1.9s;
+  animation-delay: 1.5s;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11580,8 +11582,10 @@ html {
 }
 
 
-.portrait img{
-  width: 320px;
+.img-fluid-portait{
+  display: block;
+  max-width: 300px;
+  min-width: 300px;
   height: auto;
   border-style: solid;
   border-radius: 0.5rem;
