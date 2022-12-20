@@ -76,7 +76,7 @@
         <!-- About Section-->
         <section class="page-section text-dark mb-0 vh-100 justify-content-center" id="about">
             <div class="card">
-                <div class="row no-gutters">
+                <div class="row">
                     <div class="col-sm-7 order-1">
                         <div class="card-body">
                             <h1 class="page-section-heading about-me">Hello world, I'm Bo!</h1>An aspiring <strong>web designer/developer.</strong>
@@ -87,7 +87,7 @@
                                 <br><br>
                                 When I'm not at my computer, I can be found cooking, at a concert, playing video games, or travelling the world!</p>
                             <div class="row justify-content-center">
-                            <a class="btn btn-l btn-dark mb-2" href="#">
+                            <a class="btn btn-xl btn-dark mb-2" href="#">
                                 <i class="fas fa-download me-2"></i>
                                 Resume
                             </a>
@@ -118,11 +118,11 @@
 
 
         <!-- Portfolio Section-->
-        <section class="page-section text-white" id="projects">
+        <section class="page-section" id="projects">
             <div class="card">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+                <h2 class="page-section-heading text-center text-secondary mb-0">Projects</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -169,7 +169,7 @@
             <div class="card">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-secondary mb-0">Contact Me</h2>
                 <!-- Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -179,13 +179,13 @@
                     <div class="col-lg-10 col-xl-9">
                         <form action="https://formsubmit.co/bobartolome@gmail.com" id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST">
                             <!-- Name input-->
-                            <div class="form-floating mb-2">
+                            <div class="form-floating mb-1">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
-                            <div class="form-floating mb-2">
+                            <div class="form-floating mb-1">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
@@ -194,7 +194,7 @@
                             <!-- Hidden subject field -->
                             <input type="hidden" name="_subject" value="Portfolio Email Submission!">
                             <!-- Message input-->
-                            <div class="form-floating mb-2">
+                            <div class="form-floating mb-1">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
@@ -204,14 +204,14 @@
                             <!-- This is what your users will see when the form-->
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-2">
+                                <div class="text-center mb-1">
                                     <div class="fw-bolder">Form submission successful!</div>
                                 </div>
                             </div>
                             <!-- Submit error message-->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-2">Error sending message!</div></div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-1">Error sending message!</div></div>
                             <!-- Submit Button-->
                             <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
                         </form>
