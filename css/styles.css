@@ -11657,3 +11657,23 @@ html {
 .carousel-inner {
   border-style: solid;
 }
+
+@media (max-width: 576px) {
+  .card {
+    padding: 0;
+  }
+
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+
+  .img-fluid-portait {
+    max-width: 200px;
+    min-width: 200px;
+    height: auto;
+  }
+}
