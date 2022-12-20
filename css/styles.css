@@ -596,8 +596,8 @@ progress {
 
 .img-fluid {
   display: block;
-  max-width:100%;
-  min-width: 50%;
+  max-width: 100%;
+  min-width: 65%;
   height: auto;
   /* border: 5px solid #000; */
 
@@ -2203,9 +2203,9 @@ progress {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 0.5rem;
+  font-weight: 200;
+  line-height: 1;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
@@ -2330,7 +2330,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1;
   color: #212529;
   background-color: transparent;
   border: solid transparent;
@@ -2678,14 +2678,14 @@ textarea.form-control-lg {
 .form-floating > .form-control,
 .form-floating > .form-select {
   height: 5.5rem;
-  line-height: 1.25;
+  line-height: 1;
 }
 .form-floating > label {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   pointer-events: none;
   border: 0.125rem solid transparent;
   transform-origin: 0 0;
@@ -4532,6 +4532,8 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: 0.125rem solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
+  padding: 4rem 7rem;
+  margin: 0rem 3rem;
 }
 .card > hr {
   margin-right: 0;
@@ -11324,7 +11326,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
 }
+
+.page-section .container {
+  scroll-snap-type: y mandatory;
+}
+
+
 
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11386,7 +11395,7 @@ html {
 
 #mainNav {
   animation: slide-in 1.3s both;
-  animation-delay: 1.9s;
+  animation-delay: 1.5s;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11580,8 +11589,10 @@ html {
 }
 
 
-/* .portrait img{
-  width: 320px;
+.img-fluid-portait{
+  display: block;
+  max-width: 300px;
+  min-width: 300px;
   height: auto;
   border-style: solid;
   border-radius: 0.5rem;
@@ -11658,3 +11669,28 @@ html {
 .carousel-inner {
   border-style: solid;
 }
+
+@media (max-width: 576px) {
+  .card {
+    padding: 0;
+  }
+
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+
+  .img-fluid-portait {
+    max-width: 200px;
+    min-width: 200px;
+    height: auto;
+  }
+}
+
+/* .form-floating {
+  width: 45rem;
+  padding-right: 5rem;
+} */
